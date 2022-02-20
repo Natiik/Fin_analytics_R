@@ -15,16 +15,16 @@ getSum <- function(list) {
 
 midpoint <- list()
 relative_fr <- list()
-comulative_fr <- list()
+cumulative_fr <- list()
 count <- getSum(frequency)
 
 for (i in seq(bottom)) {
   midpoint[[i]] <- trunc((bottom[[i]] + up[[i]]) / 2)
   relative_fr[[i]] <- round(frequency[[i]] / count,digits=3)
   if (i == 1) {
-    comulative_fr[[i]] <- relative_fr[[i]]
+    cumulative_fr[[i]] <- relative_fr[[i]]
   }else {
-    comulative_fr[[i]] <- comulative_fr[[i - 1]] + relative_fr[[i]]
+    cumulative_fr[[i]] <- cumulative_fr[[i - 1]] + relative_fr[[i]]
   }
 }
 
@@ -34,7 +34,7 @@ result<- data.frame(
   frequency=as.numeric(unlist(frequency)),
   midpoint=as.numeric(unlist(midpoint)),
   relative_frequency=as.numeric(unlist(relative_fr)),
-  comulative_frequency=as.numeric(unlist(comulative_fr))
+  cumulative_frequency=as.numeric(unlist(cumulative_fr))
 )
 print(result)
 write.csv(result,"home_task/task_2_3/output.csv")
