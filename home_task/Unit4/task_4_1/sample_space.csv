@@ -1,0 +1,8 @@
+,A,B,C,a,b,c
+A, ,AB,AC,Aa,Ab,Ac
+B, ,,BC,Ba,Bb,Bc
+C, ,,,Ca,Cb,Cc
+a, ,,,,ab,ac
+b, ,,,,,bc
+c, ,,,,,
+

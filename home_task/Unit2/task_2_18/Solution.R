@@ -1,5 +1,5 @@
 print('---------------------------------------------------')
-table <- read.csv("home_task/task_2_4/input.csv")
+table <- read.csv("input.csv")
 
 bottom <- as.list(table$from)
 up <- as.list(table$to)
@@ -37,5 +37,5 @@ result<- data.frame(
   cumulative_frequency=as.numeric(unlist(cumulative_fr))
 )
 print(result)
-write.csv(result,"home_task/task_2_4/output.csv")
+write.csv(result, "output.csv")
 print("DONE")

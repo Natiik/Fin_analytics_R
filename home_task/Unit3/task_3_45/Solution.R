@@ -1,5 +1,5 @@
 print('---------------------------------------------------')
-table <- read.csv("home_task/task_3_45/input.csv")
+table <- read.csv("input.csv")
 
 get_range <- function(numeric) {
   return(max(numeric) - min(numeric))
@@ -50,8 +50,8 @@ print(var_res)
 print("                                             ")
 print(d_res)
 
-write.csv(result,"home_task/task_3_45/output.csv")
-write.csv(d_res,"home_task/task_3_45/output_d.csv")
-write.csv(var_res,"home_task/task_3_45/output_var.csv")
+write.csv(result, "output.csv")
+write.csv(d_res, "output_d.csv")
+write.csv(var_res, "output_var.csv")
 
 print("DONE")

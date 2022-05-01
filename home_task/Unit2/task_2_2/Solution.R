@@ -29,7 +29,7 @@ for (i in 1:nInterv) {
   destribution[[i]] <- n
 }
 boards[nInterv + 1] <- maxValue
-png("home_task/task_2_2/histogram.png")
+png("histogram.png")
 hist(data, breaks = as.numeric(unlist(boards)), col = 'blue')
 dev.off()
 
@@ -55,6 +55,6 @@ table<-data.frame(
   frequency_n =as.numeric(unlist(destribution))
 )
 
-write.csv(table,"home_task/task_2_2/distribution_output.csv")
+write.csv(table, "distribution_output.csv")
 print(table)
 
